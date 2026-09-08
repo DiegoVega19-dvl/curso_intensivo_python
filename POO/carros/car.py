@@ -56,7 +56,7 @@ class Battery:
 class ElectricCar(Car):
     def __init__(self, make, model, year):
         super().__init__(make, model, year)
-        self.battery = Battery()  # compisicion de la clase battery (objeto)
+        self.battery = Battery()  # composicion de la clase battery (objeto)
 
     def fill_tank_gas(self):
         print("los carros elctricos no tienen tanque de gasolina")

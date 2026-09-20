@@ -11,3 +11,20 @@ tipos de linked list
 3.- circulares
 """
 
+class Nodo:
+    def __init__(self,valor):
+        self.valor = valor
+        self.sig = None
+
+class ListaEnlazada:
+    def __init__(self):
+        self.cabeza = None
+
+    def insertar_inicio(self,valor):
+        nuevo = Nodo(valor)
+        nuevo.sig = self.cabeza
+        self.cabeza = nuevo
+
+    def esta_vacia(self):
+        return self.cabeza is None
+

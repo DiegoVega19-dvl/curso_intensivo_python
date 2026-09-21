@@ -27,7 +27,6 @@ class Car:
         print(f"el tanque tiene: {litros} listros de gasolina")
 
 
-"""
 # clase bateria
 class Battery:
     def __init__(self, battery_size=40):
@@ -68,4 +67,4 @@ mi_carro.battery.describe_battery()
 mi_carro.battery.get_range()
 mi_carro.battery.upgrade_battery()
 mi_carro.battery.get_range()
-"""
+

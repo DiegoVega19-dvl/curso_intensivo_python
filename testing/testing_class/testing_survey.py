@@ -1,5 +1,11 @@
-
+import pytest
 from survey import AnonymousSurvey
+
+@pytest.fixture
+def language_survey():
+    question = "que lenguaje aprendiste primero a hablar?"
+    language_survey = AnonymousSurvey(question)
+    return language_survey
 
 def test_store_single_response():
     question = "que lenguaje aprendiste primero?"
